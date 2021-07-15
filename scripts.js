@@ -47,22 +47,6 @@ let simpleStarshipArray = starships.map((starship) => {
 
 simplePeopleArray.forEach((person) => {
      let nameElement = document.createElement('p');
-     
-    nameElement.innerHTML = person.fullName;
-    
-    let peopleDiv = document.querySelector('#peopleDiv');
-
-    peopleDiv.append(nameElement);
-})
-
-simpleStarshipArray.forEach((starship) => {
-    let unnamedElement = document.createElement('p');
-
-    unnamedElement.innerHTML = starship.name;
-    
-    let starshipDiv = document.querySelector('#starshipDiv')
-
-    starshipDiv.append(unnamedElement);
 })
 
 //build rendering loop
