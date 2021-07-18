@@ -46,7 +46,45 @@ let simpleStarshipArray = starships.map((starship) => {
 //display the information onto the webpage
 
 simplePeopleArray.forEach((person) => {
-     let nameElement = document.createElement('p');
+    let nameElement = document.createElement('p');
+
+    let nameElementOne = document.createElement('p');
+
+    let nameElementTwo = document.createElement('p');
+
+    nameElement.innerHTML = person.fullName;
+
+    nameElementOne.innerHTML = person.birthday;
+
+    nameElementTwo.innerHTML = person.homeWorld;
+    
+    let peopleDiv = document.querySelector('#peopleDiv');
+
+    nameElement.append(nameElementOne, nameElementTwo);
+
+    peopleDiv.append(nameElement);
+
 })
 
+
+simpleStarshipArray.forEach((starship) => {
+    let unnamedElement = document.createElement('p')
+    
+    let unnamedElementOne = document.createElement('p')
+
+    let unnamedElementTwo = document.createElement('p')
+
+    unnamedElement.innerHTML = starship.name;
+
+    unnamedElementOne.innerHTML = starship.manufacture;
+
+    unnamedElementTwo.innerHTML = starship.model;
+    
+    let starshipDiv = document.querySelector('#starshipDiv');
+
+    unnamedElement.append(unnamedElementOne, unnamedElementTwo);
+
+    starshipDiv.append(unnamedElement);
+
+})
 //build rendering loop

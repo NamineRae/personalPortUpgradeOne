@@ -1,0 +1,23 @@
+
+body {
+    background-color: #ecebe9;
+}
+
+p {
+    max-width: 25%;
+    padding: 2%;
+}
+
+#peopleDiv{
+    background-color: #b1cfff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#starshipDiv {
+    background-color: #d392f3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
